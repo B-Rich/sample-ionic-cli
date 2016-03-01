@@ -1,5 +1,8 @@
 {
   "name": "ionic",
   "app_id": "baaa5ae4",
-  "gulpStartupTasks": ["sass", "watch"]
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
 }

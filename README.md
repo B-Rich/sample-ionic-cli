@@ -5,9 +5,9 @@ More info here: http://ionicframework.com/ and here: http://ionicframework.com/d
 - Ionic Lab `ionic serve --lab`
 - LiveReload `ionic run --livereload`
 - Resource Generation `ionic resources`
-- Upload/View App `ionic upload`
 - Browsers/Crosswalk http://ionicframework.com/docs/cli/browsers.html
-- Ionic Platform http://ionic.io/
+- Ionic Platform (alpha) http://ionic.io/
+  - Upload/View App `ionic upload` http://docs.ionic.io/docs/io-uploading
 
 ### Downsides/questions
 - why not a generator?
