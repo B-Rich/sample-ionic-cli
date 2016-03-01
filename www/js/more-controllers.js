@@ -27,4 +27,16 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+
+  Ionic.io();
+  var user = Ionic.User.current();
+
+  if (!user.id) {
+    user.id = Ionic.User.anonymousId();
+  }
+  user.set('name', 'Richboy');
+  user.set('points', 25);
+  user.set('hobbies', ['reading', 'writing']);
+
+  console.log(user);
 });
