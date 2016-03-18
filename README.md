@@ -1,13 +1,17 @@
 # Ionic CLI
 
 ### Features
-More info here: http://ionicframework.com/ and here: http://ionicframework.com/docs/cli/
+More info here: http://ionic.io/discover, http://ionicframework.com/ and here: http://ionicframework.com/docs/cli/
 - Ionic Lab `ionic serve --lab`
-- LiveReload `ionic run --livereload`
-- Resource Generation `ionic resources`
+- LiveReload on Device `ionic run --livereload`
+- Resource (icons/splash) Generation `ionic resources`
 - Browsers/Crosswalk http://ionicframework.com/docs/cli/browsers.html
-- Ionic Platform (alpha) http://ionic.io/
-  - Upload/View App `ionic upload` http://docs.ionic.io/docs/io-uploading
+- Ionic Platform (beta) http://ionic.io/
+  - User Auth / Data - http://docs.ionic.io/docs/user-overview
+  - Push - http://docs.ionic.io/docs/push-overview
+  - Deploy / Upload / Ionic View App `ionic upload` http://docs.ionic.io/docs/deploy-overview
+  - Analytics - http://docs.ionic.io/docs/analytics-auto-tracking
+  - Package (Build/Release Service) - http://docs.ionic.io/docs/package-overview
 
 ### Downsides/questions
 - why not a generator?
@@ -18,14 +22,13 @@ More info here: http://ionicframework.com/ and here: http://ionicframework.com/d
     - `www/lib`, `.io-config.json`, `www/css` (when using sass) not in gitignore
   - cumbersome sass integration - http://ionicframework.com/docs/cli/sass.html
   - no good integration with gulp/bower/yeoman
-    - bower components not automatically added
-    - new files / scss not automatically added
+    - bower components not automatically added to index
+    - new files / scss not automatically added to index
   - no \*lint integration
   - no testing integration
 - obscured cordova version/integration
   - source files in `www/`
   - build process?
-  - platform & plugin version management?
   - https://github.com/driftyco/ionic-cli/blob/master/lib/ionic/cordova.js#L10
   - https://github.com/driftyco/ionic-app-lib/blob/master/package.json#L50
 - no sub-generators
